@@ -3,7 +3,7 @@ function middleware(name: string) {
 }
 
 function errorHandler(error: Error) {
-  console.log("Oops Some Error Has Occurred!");
+  console.log('Oops Some Error Has Occurred!');
   console.error(error);
 }
 
@@ -18,7 +18,7 @@ function two(
   try {
     const fullName = `${name} ${surname}`;
     if (fullName.length < 4) {
-      throw new Error("Invalid Full Name!");
+      throw new Error('Invalid Full Name!');
       /* return errorHandler(new Error("More")); */
     }
 

@@ -1,3 +1,5 @@
-import axios from "axios";
+import axiosInstance from './axiosInstance';
 
-// axios.get("");
+export async function allOutlets() {
+  return await axiosInstance.get('/get-all-outlets');
+}
